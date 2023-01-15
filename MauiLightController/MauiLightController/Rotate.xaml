@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiLightController.Rotate"
+             Title="Rotate">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="CompassLabel"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            x:Name="ConeSizeLabel"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Slider
+            x:Name="SliderConeSize"
+            DragCompleted="ConeSizeSliderChanged"
+            Maximum="90"
+            Minimum="5"/>
+        <Button
+                x:Name="ActivateBtn"
+                Text="Activate"
+                Clicked="OnActivateClicked"
+                HorizontalOptions="Center" />
+        <Switch
+            x:Name="Switch"
+            IsToggled="False"
+            Toggled="Toggle"
+            HorizontalOptions="Center" />
+        <Button
+                x:Name="GoogleBtn"
+                Text="Google Maps"
+                Clicked="OnGoogleClicked"
+                HorizontalOptions="Center" />
+        <Image
+            x:Name="Img1"
+            Source="Images/arrow"/>
+        <Image
+            x:Name="Img2"
+            Source="Images/arrow"/>
+    </VerticalStackLayout>
+</ContentPage>

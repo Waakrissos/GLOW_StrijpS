@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiLightController.LightShow"
+             Title="LightShow">
+    <VerticalStackLayout>
+        <Button
+                x:Name="LightShow1Btn"
+                Text="Fade all Lights"
+                Clicked="LightShow1Btn_Clicked"
+                HorizontalOptions="Center" />
+        <Button
+            x:Name="Stop1Btn"
+            Text="Stop"
+            BackgroundColor="Red"
+            Clicked="Stop1Btn_Clicked"
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

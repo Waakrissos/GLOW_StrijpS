@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiLightController.FadeControl"
+             Title="FadeControl">
+    <VerticalStackLayout>
+        <Switch
+            x:Name="Switch"
+            IsToggled="False"
+            Toggled="Toggle"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label
+            x:Name="TimerLbl"
+            Text="Timer"/>
+        <Slider
+            x:Name="Timer"
+            DragCompleted="TimerChanged"
+            Maximum="1000"
+            Minimum="10"/>
+        <Label
+             x:Name="IncrementLbl"
+            Text="Increment"/>
+        <Slider
+            x:Name="Increment"
+            DragCompleted="IncrementChanged"
+            Maximum="100"
+            Minimum="1"/>
+        <Label
+            x:Name="ChangeSpeedLbl"
+            Text="Static Change Speed:"/>
+        <Switch
+            x:Name="SwitchStaticSpeed"
+            IsToggled="False"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Label
+             x:Name="ColdLbl"
+            Text="Cold Brightness"/>
+        <Slider
+            x:Name="ColdSlider"
+            DragCompleted="ColdSliderChanged"
+            Maximum="255"
+            Minimum="0"/>
+
+        <Label
+             x:Name="WarmLbl"
+            Text="Warm Brightness"/>
+        <Slider
+            x:Name="WarmSlider"
+            DragCompleted="WarmSliderChanged"
+            Maximum="255"
+            Minimum="0"/>
+
+    </VerticalStackLayout>
+</ContentPage>

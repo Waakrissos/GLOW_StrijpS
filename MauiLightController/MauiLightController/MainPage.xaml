@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiLightController.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="30"
+            Padding="30,0"
+            VerticalOptions="Center">
+            
+            <FlexLayout
+                HeightRequest="140"
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceBetween">
+                <VerticalStackLayout
+                    Spacing="2"
+                    VerticalOptions="Center">
+                    <ImageButton
+                        x:Name="ToggleLightsBtn"
+                        Source="toggle"
+                        WidthRequest="140"
+                        HeightRequest="140"
+                        Clicked="OnToggleLightsClicked"
+                        HorizontalOptions="Start" />
+                    <Label>Controll all lights</Label>
+                </VerticalStackLayout>
+                
+                <VerticalStackLayout
+                    Spacing="2"
+                    VerticalOptions="Center">
+                    <ImageButton
+                        x:Name="FadeControlBtn"
+                        Source="Images/fade"
+                        WidthRequest="140"
+                        HeightRequest="140"
+                        Clicked="OnFadeControlClicked"
+                        HorizontalOptions="Center" />
+                    <Label>Fade controll</Label>
+                </VerticalStackLayout>
+                
+                
+            </FlexLayout>
+
+
+
+
+            <FlexLayout
+                HeightRequest="140"
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceBetween">
+
+                <VerticalStackLayout
+                    Spacing="2"
+                    VerticalOptions="Center">
+                    <ImageButton
+                        x:Name="LightShowsBtn"
+                        Source="Images/lightshow"
+                        Clicked="OnLightShowClicked"
+                        WidthRequest="140"
+                        HeightRequest="140"
+                        HorizontalOptions="Center" />
+                    <Label>Lightshow</Label>
+                </VerticalStackLayout>
+
+
+                <VerticalStackLayout
+                    Spacing="2"
+                    VerticalOptions="Center">
+                    <ImageButton
+                        x:Name="Wave"
+                        Source="Images/wave"
+                        Clicked="OnWaveClicked"
+                        WidthRequest="140"
+                        HeightRequest="140"
+                        HorizontalOptions="Center" />
+                    <Label>Light wave</Label>
+                </VerticalStackLayout>
+                
+            </FlexLayout>
+
+            <FlexLayout
+                HeightRequest="140"
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceBetween">
+
+                <VerticalStackLayout
+                    Spacing="2"
+                    VerticalOptions="Center">
+                    <ImageButton
+                        x:Name="RotateBtn"
+                        Source="compass"
+                        Clicked="OnRotateClicked"
+                        WidthRequest="140"
+                        HeightRequest="140"
+                        HorizontalOptions="Center" />
+                    <Label>Pointing lights</Label>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout
+                    Spacing="2"
+                    VerticalOptions="Center">
+                    <ImageButton
+                        x:Name="WhackAMoleBtn"
+                        Source="whackamole"
+                        WidthRequest="140"
+                        HeightRequest="140"
+                        Clicked="OnWhackAMoleClicked"
+                        HorizontalOptions="Center" />
+                    <Label>Whack-a-mole</Label>
+                </VerticalStackLayout>
+                
+
+            </FlexLayout>
+
+            <FlexLayout
+                HeightRequest="50"
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceBetween">
+
+                <Button
+                x:Name="FollowLight"
+                Text="Light Follow"
+                TextColor="Black"
+                Clicked="OnFollowClicked"
+                WidthRequest="140"
+                HorizontalOptions="Center" />
+
+                <Button
+                x:Name="GpsBtn"
+                Text="Gps Follow"
+                    TextColor="Black"
+                Clicked="OnGpsClicked"
+                WidthRequest="140"
+                HorizontalOptions="Center" />
+
+            </FlexLayout>
+
+                <FlexLayout
+                HeightRequest="50"
+                Direction="Row"
+                AlignItems="Center"
+                JustifyContent="SpaceBetween">
+                    <Button 
+                    x:Name="ToggleNight"
+                    Clicked="ToggleNight_Clicked"
+                    BackgroundColor="DarkBlue"
+                    WidthRequest="140"
+                    Text="Night"/>
+                <Button 
+                    x:Name="ToggleDay"
+                    Clicked="ToggleDay_Clicked"
+                    Text="Day"
+                    WidthRequest="140"
+                    TextColor="Black"
+                    BackgroundColor="Yellow"/>
+            </FlexLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
